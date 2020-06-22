@@ -1,19 +1,23 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import { StyleSheet, Text, View, StatusBar, SafeAreaView } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+
+import Navigator from "./routes/HomeStack";
+import OnBoardingScreen from "./screens/OnBoardingScreen";
 
 export default function App() {
+  const [firstScreen, setFirstScreen] = useState(true);
+  if (firstScreen) {
+    return (
+      <SafeAreaProvider>
+        <OnBoardingScreen />
+      </SafeAreaProvider>
+    );
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <SafeAreaProvider>
+      <Navigator />
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
