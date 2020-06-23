@@ -2,16 +2,17 @@ import React from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
 import SliderItem from "./SliderItem";
 
-export default function Slider({ data, onChange,viewRef }) {
-  console.log("render");
+export default function Slider({ data, onChange, viewRef }) {
 
+  
   return (
     <View style={styles.container}>
       <ScrollView
-      ref={viewRef()}
+        ref={viewRef()}
         snapToAlignment={"center"}
         scrollEventThrottle={16}
         onScroll={onChange}
+       
         horizontal
         pagingEnabled
         showsHorizontalScrollIndicator={false}
@@ -32,5 +33,5 @@ export default function Slider({ data, onChange,viewRef }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex:0.85 },
+  container: { flex: 0.85 },
 });

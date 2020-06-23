@@ -1,6 +1,6 @@
 import React from "react";
-import { Dimensions,StyleSheet } from "react-native";
-import {colors} from './colors'
+import { Dimensions, StyleSheet } from "react-native";
+import { colors } from "./colors";
 // Precalculate Device Dimensions for better performance
 const x = Dimensions.get("window").width;
 const y = Dimensions.get("window").height;
@@ -29,39 +29,25 @@ export const globalStyle = StyleSheet.create({
   },
   image: {
     height: x * 0.8,
-    width: x*0.9,
+    width: x * 0.9,
     resizeMode: "contain",
-   
   },
   button: {
-    backgroundColor:"red",
-    paddingHorizontal:em(6),
-    paddingVertical:em(.7),
-    borderRadius:em(1.5),
-    backgroundColor:colors.primary
-    
-    
-    
+    backgroundColor: "red",
+    paddingHorizontal: em(6),
+    paddingVertical: em(0.7),
+    borderRadius: em(1.5),
+    backgroundColor: colors.primary,
   },
-  buttonText:{
-    color:colors.buttonTextColor
+  buttonText: {
+    color: colors.buttonTextColor,
   },
-  fontSize:{
-    fontSize:em(1)
+  fontSize: {
+    fontSize: em(1),
   },
-  
-
-  // GENERAL
-  DEVICE_WIDTH: x,
-  DEVICE_HEIGHT: y,
-  RATIO_X: ratioX,
-  RATIO_Y: ratioY,
-  UNIT: em(1),
-  PADDING: em(1.25),
 
   // FONT
   FONT_SIZE: em(1),
-  FONT_SIZE_SMALLER: em(0.75),
-  FONT_SIZE_SMALL: em(0.875),
+
   FONT_SIZE_TITLE: em(1.3),
-})
+});

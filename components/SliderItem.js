@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { View, Text, StyleSheet, Image, Dimensions } from "react-native";
 import { globalStyle } from "../styles";
 const { width } = Dimensions.get("window");
