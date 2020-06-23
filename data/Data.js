@@ -1,33 +1,25 @@
   
 export const dummyData =
 [{
-        title: 'Dünyanın her noktasına 7/24 varco ile para yolla ', url: 'https://i.ibb.co/hYjK44F/anise-aroma-art-bazaar-277253.jpg',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        title: '**Dünyanın** **her** noktasına 7/24 varco ile para yolla ', url: 'https://www.myvarco.com/varco-images/main-banner.png',
+        description: "Dünyanın neresinde olursan ol, Varco hesapları arasında 7/24 ücretsiz para yolla. Hem kurdan kazan,hem masraftan kaç. Yurt içinde de ETFsiz istediğin hesaba para gönder",
         id: 1
 
 },
 {
-        title: 'Food inside a Bowl', url: 'https://i.ibb.co/JtS24qP/food-inside-bowl-1854037.jpg',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        title: '**Gizli ücretsiz akıllı** VISA', url: 'https://www.myvarco.com/varco-images/screen-3.png',
+        description: "Kartını kaybedersen anında dondurabilir ve yenisini talep edebilirsin. Temassız ödeme, ATM'den para çekme ve online harcama gibi özellikleri istediğin an ve istediğin yerde aç veya kapat",
         id: 2
 },
 {
-        title: 'Vegatable Salad', url: 'https://i.ibb.co/JxykVBt/flat-lay-photography-of-vegetable-salad-on-plate-1640777.jpg',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        title: '**Anlık** harcama bildirimleri', url: 'https://www.myvarco.com/varco-images/logo.png',
+        description: "Her hesap hareketini sana anında bildiriyoruz ki, hesabında olanlardan her zaman haberdar ol.",
         id: 3
+        
 },
 {
-    title: 'Food inside a Bowl', url: 'https://i.ibb.co/JtS24qP/food-inside-bowl-1854037.jpg',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    id: 4
-},
-{
-    title: 'Food inside a Bowl', url: 'https://i.ibb.co/JtS24qP/food-inside-bowl-1854037.jpg',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    id: 5
-},
-{
-    title: 'Food inside a Bowl', url: 'https://i.ibb.co/JtS24qP/food-inside-bowl-1854037.jpg',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    id: 6
-},]
+        title: '**Optimal Kurlar**', url: 'https://www.myvarco.com/varco-images/logo.png',
+        description: "Optimal kurlar üzerinden,anında istediğin para birimine çevir ve harca",
+        id: 3
+}
+]

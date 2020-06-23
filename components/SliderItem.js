@@ -1,26 +1,53 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { View, Text, StyleSheet, Image, Dimensions } from "react-native";
-
+import { globalStyle } from "../styles";
 const { width } = Dimensions.get("window");
-const { height } = Dimensions.get("window");
+
+import { CustomText } from "./CustomText";
 export default function SliderItem({ image, title, description }) {
   return (
     <View style={styles.itemContainer}>
-      <Image
-        source={{ uri: image }}
-        style={{ width: width / 2, height: height / 2 }}
-        
-      />
-      <Text style={styles.text}>{description}</Text>
+      <View >
+        <Image
+          source={{ uri: image }}
+          style={globalStyle.image}
+         
+        />
+      </View>
+
+      <View>
+        <Text style={styles.title}>
+          <CustomText data={title} />
+        </Text>
+      </View>
+      <View>
+        <Text style={styles.text}>
+          <CustomText data={description} />
+        </Text>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   itemContainer: {
+    marginTop: 0,
+    flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     width,
   },
-  text: { textAlign: "center", marginTop: 20 },
+
+  title: {
+    fontSize: globalStyle.FONT_SIZE_TITLE,
+    textAlign: "center",
+    marginTop: 10,
+  },
+  text: {
+    textAlign: "center",
+    marginTop: 10,
+    fontSize: globalStyle.FONT_SIZE,
+    width: width * 0.95,
+   
+  },
 });

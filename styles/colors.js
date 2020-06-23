@@ -1,4 +1,5 @@
 export const colors = {
-    activeDot:"#82CAB3",
-    notActiveDot:"#E3F3EE"
+    primary:"#82CAB3",
+    secondary:"#E3F3EE",
+    buttonTextColor:"#FDFBFD"
 }
